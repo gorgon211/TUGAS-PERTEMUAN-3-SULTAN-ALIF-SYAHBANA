@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas HTML Murni</title>
+</head>
+
+<body>
+    <h1>Data Mahasiswa</h1>
+    <b>NIM: </b>231011400662 <br>
+    <b>Nama: </b>Sultan Alif Syahbana <br>
+    <b>Kelas: </b> 05TPLP015 <br> <br>
+
+    <!-- Bagian dari Table -->
+     <table border="1" cellpadding="8" cellspacing="0">
+        <tr bgcolor="lightyellow">
+            <th>NIM</th>
+            <th>Nama</th>
+            <th>Kelas</th>
+        </tr>
+        <tr bgcolor="lightcyan">
+            <td>231011400662</td>
+            <td>Sultan Alif Syahbana</td>
+            <td>05TPLP015</td>
+        </tr>
+     </table>
+
+     <!-- Bagian dari Form -->
+     <form action="">
+        <h2>Absensi</h2>
+        <label>NIM: 
+            <input type="text" name="nim" value="231011400662">
+        </label>
+
+        <br><br>
+        <label for="nama">Nama: 
+            <input type="text" name="nama" value="Sultan Alif Syahbana">
+        </label>
+        <br><br>
+
+        <label for="kelas">Kelas: 
+            <select name="kelas" id="kelas">
+                <option value="05TPLP015">05TPLP015</option>
+                <option value="05TPLP014">05TPLP014</option>
+                <option value="05TPLP013">05TPLP013</option>
+                <option value="05TPLP012">05TPLP012</option>
+            </select>
+        </label>
+        <br><br>
+
+        <label>
+        <input type="checkbox" name="absen[]" value="hadir"> Hadir
+        </label>
+        <br>
+        <label>
+         <input type="checkbox" name="absen[]" value="izin"> Izin
+        </label>
+        <br>
+        <label>
+        <input type="checkbox" name="absen[]" value="Sakit"> Sakit
+        </label>
+        <br><br>
+
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Batal">
+     </form>
+</body>
+</html>
